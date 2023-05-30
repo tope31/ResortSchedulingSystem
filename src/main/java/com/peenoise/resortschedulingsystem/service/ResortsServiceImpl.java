@@ -27,18 +27,6 @@ public class ResortsServiceImpl implements ResortsService {
         resortsRepository.save(resorts);
     }
 
-//    @Override
-//    public String updateResort(Resorts resorts) {
-
-//        if (resortsRepository.existsById(resorts.getId())) {
-//            resorts.setId(resorts.getId());
-//            resortsRepository.save(resorts);
-//            return "Successfully updated";
-//        } else {
-//            return "There is no id like this";
-//        }
-//    }
-
     @Override
     public void deleteResort(Long id) {
         resortsRepository.deleteById(id);
